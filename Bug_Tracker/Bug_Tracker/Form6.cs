@@ -119,10 +119,10 @@ namespace Bug_Tracker
                     client.Timeout = 10000;
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;
                     client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential("scionboy7798@gmail.com", "cotn1109");
+                    client.Credentials = new NetworkCredential("******", "*****");
                     MailMessage msg = new MailMessage();
                     msg.To.Add(ReporterUsername());
-                    msg.From = new MailAddress("scionboy7798@gmail.com");
+                    msg.From = new MailAddress("******");
                     msg.Subject = "Report #" + darkList.Vars.statusId;
                     msg.Body = "Your report is finished";
                     client.Send(msg);
